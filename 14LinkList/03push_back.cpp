@@ -52,7 +52,7 @@ int main(){
     ll.push_back(2);
     ll.push_back(1);
     ll.print();
-
+    cout<<"\n";
     ll.push_back(4);
     ll.push_back(5);
     ll.print();
