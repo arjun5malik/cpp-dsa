@@ -13,7 +13,6 @@ public:
 };
 
 class List{
-public:
       Node* head;
       Node* tail;
 public:
