@@ -44,10 +44,10 @@ public:
 
     int helper(Node* head,int key){// head-->is the local variable for this function
         if(head==NULL){
-        return -1;
+           return -1;
         }
         if(head->data==key){
-        return 0;
+           return 0;
         }
 
         int idx=helper(head->next,key);
