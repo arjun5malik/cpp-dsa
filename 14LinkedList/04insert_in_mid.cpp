@@ -69,7 +69,7 @@ int main(){
     ll.push_back(2);
     ll.push_back(1);
     ll.print();
-    
+    cout<<"\n";
     ll.insert(100,2);
     ll.print();
     
