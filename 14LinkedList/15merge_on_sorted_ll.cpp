@@ -90,7 +90,7 @@ Node* splitAtMid(Node* head){
     Node*slow=head;
     Node* fast=head;
     Node* prev=NULL;
-    while(fast!=NULL && fast->next==NULL){
+    while(fast!=NULL && fast->next!=NULL){
         prev=slow;
         slow=slow->next;
         fast=fast->next->next;
@@ -102,7 +102,7 @@ Node* splitAtMid(Node* head){
 }
 
 Node* mergeSort(Node* head){
-        if(head==NULL || head->next!=NULL){
+        if(head==NULL || head->next==NULL){
             return head;
         }
         Node* rightHead=splitAtMid(head);
@@ -123,6 +123,7 @@ int main(){
     ll.push_front(5);
     
     print(ll.head);
+    cout<<"\n";
 
     ll.head=mergeSort(ll.head);
     print(ll.head);
