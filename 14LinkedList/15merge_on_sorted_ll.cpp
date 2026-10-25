@@ -102,7 +102,7 @@ Node* splitAtMid(Node* head){
 }
 
 Node* mergeSort(Node* head){
-        if(head==NULL || head->next==NULL){
+        if(head==NULL || head->next!=NULL){
             return head;
         }
         Node* rightHead=splitAtMid(head);
