@@ -109,8 +109,8 @@ Node* ZigZagLL(Node* head){
  
         tail=right;
 
-        left=left->next;
-        right=right->next; 
+        left=Nextleft;
+        right=Nextright; 
 
     }
 
