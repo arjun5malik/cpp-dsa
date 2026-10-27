@@ -14,13 +14,13 @@ public:
   }    
 };
 
-class DoubelyList{
+class DoublyList{
 public:   
     Node* head;
     Node* tail;
 
 public:
-    DoubelyList(){
+    DoublyList(){
         head=NULL;
         tail=NULL;
     }
@@ -62,7 +62,7 @@ public:
 };
 
 int main(){
-    DoubelyList dbll;
+    DoublyList dbll;
 
     dbll.push_front(4);
     dbll.push_front(3);
