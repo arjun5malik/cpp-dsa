@@ -49,7 +49,7 @@ public:
         }
     }
 
-    void printist(){
+    void printlist(){
         Node* temp=head;
 
         while(temp!=NULL){
@@ -68,7 +68,7 @@ int main(){
     dbll.push_front(3);
     dbll.push_front(2);
     dbll.push_front(1);
-    dbll.printist();//1<=>2<=>3<=>4<=>NULL
+    dbll.printlist();//1<=>2<=>3<=>4<=>NULL
 
     cout<<"\n";
 
@@ -76,7 +76,7 @@ int main(){
     dbll.push_back(3);
     dbll.push_back(2);
     dbll.push_back(1);
-    dbll.printist();//4<=>3<=>2<=>1<=>NULL
+    dbll.printlist();//4<=>3<=>2<=>1<=>NULL
 
     return 0;
 }
