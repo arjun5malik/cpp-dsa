@@ -10,7 +10,7 @@ void stockSpanProblem(vector<int> stock,vector<int> span){
 
     for(int i=1;i<stock.size();i++){
         int currPrice=stock[i];
-        while(!s.empty() && stock[i]>=stock[s.top()]){
+        while(!s.empty() && currPrice>=stock[s.top()]){
             s.pop();
         }
 
@@ -19,6 +19,7 @@ void stockSpanProblem(vector<int> stock,vector<int> span){
         }else{
             int prevHigh=s.top();
             span[i]=i-prevHigh;
+            s.push(i);
         }
     }
 
