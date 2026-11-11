@@ -11,21 +11,17 @@ bool validParenthesis(string str){
             ans.push(str[i]);
         }
         else{
-            if(str[i]==')'){
-                if(ans.empty() || ans.top()!='('){
-                    return false;
-                }
+            if(ans.empty()){
+                return false;
+            }
+            
+            int top=ans.top();
+            if(top=='(' && str[i]==')' ||
+               top=='{' && str[i]=='}' ||
+               top=='[' && str[i]==']'){
                 ans.pop();
-            }else if(str[i]=='}'){
-                if(ans.empty() || ans.top()!='{'){
-                    return false;
-                }
-                ans.pop();
-            }else if(str[i]==']'){
-                if(ans.empty() || ans.top()!='['){
-                    return false;
-                }
-                ans.pop();
+            }else{
+                return false;
             }
         }
     }
