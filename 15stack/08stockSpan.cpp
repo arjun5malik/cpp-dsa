@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 
-void stockSpanProblem(vector<int> stock,vector<int> span){
+void stockSpanProblem(vector<int> stock,vector<int> span){//TC:O(n) 
     stack<int> s;
     s.push(0);
     span[0]=1;
