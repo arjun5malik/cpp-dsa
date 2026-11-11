@@ -3,7 +3,7 @@
 #include<string>
 using namespace std;
 
-bool validParenthesis(string str){
+bool validParenthesis(string str){// TC:O(N) & SC:O(N)
     stack<char> ans;
 
     for(int i=0;i<str.length();i++){
