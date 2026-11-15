@@ -2,12 +2,6 @@
 #include<queue>
 using namespace std;
 
-void print(int arr[]){
-    for(int i=0;i<sizeof(arr)/sizeof(int);i++){
-        cout<<arr[i]<<" ";
-    }
-}
-
 void FirstNonRepeating(string str){
     queue<char> Q;
     int freq[26] = {0};
@@ -16,7 +10,6 @@ void FirstNonRepeating(string str){
         char ch=str[i];
         Q.push(ch);
         freq[ch-'a']++;
-        print(freq);
 
         while(!Q.empty() && freq[Q.front()-'a']>1){
            Q.pop();
