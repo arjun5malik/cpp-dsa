@@ -2,7 +2,7 @@
 #include<queue>
 using namespace std;
 
-void FirstNonRepeating(string str){
+void FirstNonRepeat(string str){
     queue<char> Q;
     int freq[26] = {0};
 
@@ -26,7 +26,7 @@ void FirstNonRepeating(string str){
 
 int main(){
     string str="aabccxb";
-    FirstNonRepeating(str);
+    FirstNonRepeat(str);
 
     return 0;
 }
