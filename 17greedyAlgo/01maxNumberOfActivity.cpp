@@ -10,7 +10,6 @@ int maxActivities(vector<int>& start, vector<int>& end){
 
    for(int i=1;i<=start.size();i++){
         if(start[i]>=currEndTime){ //non-overlapping
-            
             count++;
             currEndTime=end[i];
         }
